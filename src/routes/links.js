@@ -28,7 +28,8 @@ route.post("/", async (req, res) => {
     const url = await createCustomShortCode(code, link);
     return res.json(url);
   } catch (e) {
-    return res.status(400).json({ error: e.message });
+    //return res.status(400).json({ error: e.message });
+    return res.status(400).json({ error: "FUCK!" });
   }
 });
 

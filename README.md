@@ -7,6 +7,7 @@ Enter PSQL for Postgres
 
 ```
 # Linux 
+sudo pg_ctlcluster 13 main start
 sudo -u postgres psql 
 
 # Mac 

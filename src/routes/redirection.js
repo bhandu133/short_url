@@ -11,7 +11,8 @@ route.get("/:code", async (req, res) => {
   if (url) {
     return res.redirect(url.link);
   } else {
-    return res.redirect('https://scaler.com');
+   // return res.redirect('https://google.com');
+   return res.status(404).json({ error: "No such shortcode created" });
   }
 });
 
