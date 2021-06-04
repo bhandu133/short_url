@@ -14,5 +14,8 @@
     "pg": "^8.6.0",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.6.2"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL"
   }
 }
