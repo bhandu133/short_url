@@ -1,11 +1,11 @@
 const { Sequelize, DataTypes } = require('sequelize')
-
+require('dotenv').config()
 
 const db = new Sequelize({
     dialect: 'postgres',
-    database: 'sclrac',
-    username: 'sclrac',
-    password: 'sclrac'
+    database: process.env.DB_DATABASE,
+    username: process.env.DB_USER,
+    password: process.env.DB_PASSWORD
 })
 
 const URLs = db.define('urls', {
